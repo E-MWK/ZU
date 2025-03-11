@@ -120,6 +120,92 @@ body {
     background: #e74c3c;
 }
 
+/* Add to styles.css */
+.quizzes-section {
+    margin-top: 3rem;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #3498db;
+}
+
+.quizzes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.quiz-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.quiz-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.quiz-subject {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.quiz-date {
+    font-size: 1rem;
+    color: #e74c3c;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.quiz-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+.quiz-link {
+    margin-top: auto;
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.quiz-link:hover {
+    background-color: #2980b9;
+}
+
 @media (max-width: 768px) {
     .main-title {
         font-size: 2.2rem;
@@ -127,5 +213,9 @@ body {
     
     .week-card {
         padding: 1.5rem;
+    }
+    
+    .quizzes-grid {
+        grid-template-columns: 1fr;
     }
 }
