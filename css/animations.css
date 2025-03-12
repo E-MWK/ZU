@@ -1,0 +1,116 @@
+/* Base animation styles */
+[data-animate] {
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+/* Optimize animations for better performance */
+.animated {
+  transition-property: transform, opacity;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  transition-duration: 0.45s;
+  opacity: 1;
+}
+
+/* Resource buttons - faster animations */
+.resource-btn.animated {
+  transition-duration: 0.3s !important;
+}
+
+/* Animation types */
+.animated.fade-up {
+  animation: fadeUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animated.fade-right {
+  animation: fadeRight 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animated.zoom-in {
+  animation: zoomIn 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animated.fade-down {
+  animation: fadeDown 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animated.fade-in {
+  animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Animation keyframes */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Fix for white space issues */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure images don't cause overflow */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fix stars container */
+.stars {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}

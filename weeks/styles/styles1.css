@@ -368,3 +368,29 @@ body {
         transform: translateX(-100%);
     }
 }
+
+/* Performance optimizations */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.stars {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* Optimize animations */
+.course-card, .resource-btn, .lab-section {
+    will-change: transform, opacity;
+}

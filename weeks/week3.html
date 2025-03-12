@@ -2,72 +2,53 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>النشرة الأسبوعية - هندسة كهربية</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Preconnect for faster resource loading -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <!-- Optimized font awesome loading -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="styles/styles3.css">
-    <!-- Add AOS CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../css/animations.css">
+    <!-- Preload critical assets -->
+    <link rel="preload" href="../js/animations.js" as="script">
+    <link rel="preload" as="image" href="img/im25.jpg">
+    <link rel="preload" as="image" href="img/photo2.png">
+    <link rel="preload" as="image" href="img/photo3.png">
 </head>
 
 <body>
     <!-- شريط التهنئة -->
-<div class="ramadan-ticker" data-aos="fade-down">
-    <div class="ticker-content">
-
-      الاتحاد يهنئكم بحلول شهر رمضان المبارك - نسالكم صالح الدعاء
-      
-     <!-- Be the change that you wish to see in the world. ― Mahatma Gandhi -->
+    <div class="ramadan-ticker" data-animate="fade-down">
+        <div class="ticker-content">
+          الاتحاد يهنئكم بحلول شهر رمضان المبارك - نسالكم صالح الدعاء
+        </div>
     </div>
-  </div>
 
-  
     <div class="lantern lantern-left" aria-hidden="true">
-        <img src="img/photo3.png" alt="" width="100%" height="100%">
+        <img src="img/photo3.png" alt="" width="100%" height="100%" loading="lazy">
     </div>
     <div class="lantern lantern-right" aria-hidden="true">
-        <img src="img/photo2.png" alt="" width="100%" height="100%">
+        <img src="img/photo2.png" alt="" width="100%" height="100%" loading="lazy">
     </div>
     
-
+    <!-- Reduced number of stars -->
     <div class="stars" aria-hidden="true">
         <span class="star" style="--delay: 0s; --left: 10%">✧</span>
         <span class="star" style="--delay: 2s; --left: 30%">✧</span>
         <span class="star" style="--delay: 4s; --left: 50%">✧</span>
         <span class="star" style="--delay: 6s; --left: 70%">✧</span>
         <span class="star" style="--delay: 8s; --left: 90%">✧</span>
-        <span class="star" style="--delay: 0s; --left: 10%">✧</span>
-        <span class="star" style="--delay: 2s; --left: 30%">✧</span>
-        <span class="star" style="--delay: 4s; --left: 50%">✧</span>
-        <span class="star" style="--delay: 6s; --left: 70%">✧</span>
-        <span class="star" style="--delay: 8s; --left: 90%">✧</span>
-        <span class="star" style="--delay: 0s; --left: 10%">✧</span>
-        <span class="star" style="--delay: 2s; --left: 30%">✧</span>
-        <span class="star" style="--delay: 4s; --left: 50%">✧</span>
-        <span class="star" style="--delay: 6s; --left: 70%">✧</span>
-        <span class="star" style="--delay: 8s; --left: 90%">✧</span>
-        <span class="star" style="--delay: 0s; --left: 10%">✧</span>
-        <span class="star" style="--delay: 2s; --left: 30%">✧</span>
-        <span class="star" style="--delay: 4s; --left: 50%">✧</span>
-        <span class="star" style="--delay: 6s; --left: 70%">✧</span>
-        <span class="star" style="--delay: 8s; --left: 90%">✧</span>
-        <span class="star" style="--delay: 0s; --left: 10%">✧</span>
-        <span class="star" style="--delay: 2s; --left: 30%">✧</span>
-        <span class="star" style="--delay: 4s; --left: 50%">✧</span>
-        <span class="star" style="--delay: 6s; --left: 70%">✧</span>
-        <span class="star" style="--delay: 8s; --left: 90%">✧</span>
     </div>
     
-
-
-    <header class="page-header" data-aos="zoom-in" data-aos-duration="1000">
-        <img src="img/im25.jpg" alt="بنر النشرة الأسبوعية" class="header-banner">
+    <header class="page-header" data-animate="zoom-in" data-delay="0">
+        <img src="img/im25.jpg" alt="بنر النشرة الأسبوعية" class="header-banner" loading="eager">
         <h1 class="main-title">النشرة الأسبوعية - 3</h1>
     </header>
 
     <main class="courses-container">
         <!-- التصميم المنطقي -->
-        <article class="course-card" data-aos="fade-up" data-aos-delay="100">
+        <article class="course-card" data-animate="fade-up" data-delay="1">
             <div class="course-header">
                 <h2 class="course-title">
                     <i class="fa-solid fa-microchip"></i>
@@ -86,36 +67,36 @@
                     </ul>
                 </div>
 
-                <div class="resources-links">
+                <div class="resources-links" data-animate="fade-in" data-delay="0">
                     <h3 class="content-title">الموارد التعليمية:</h3>
                     <a href="https://drive.google.com/file/d/1Niit1cwDd6lycYOpzDif0XhS7f9bZXb3/view" 
                        class="resource-btn"
-                       data-aos="fade-right" 
-                       data-aos-delay="50" 
+                       data-animate="fade-right" 
+                       data-delay="0" 
                        target="_blank">
                        <i class="fa-solid fa-file-pdf"></i>
                        محاضرة 5
                     </a>
                     <a href="https://drive.google.com/file/d/161UHM04xNbqEm3CZljwesQ5tQg1pC-30/view" 
                        class="resource-btn"
-                       data-aos="fade-right" 
-                       data-aos-delay="100" 
+                       data-animate="fade-right" 
+                       data-delay="1" 
                        target="_blank">
                        <i class="fa-solid fa-file-video"></i>
                        محاضرة 6
                     </a>
                     <a href="https://www.youtube.com/playlist?list=PLhx4zaYkEjI8BuPybYhAotW2gKDIT9y2D" 
                        class="resource-btn"
-                       data-aos="fade-right" 
-                       data-aos-delay="150" 
+                       data-animate="fade-right" 
+                       data-delay="2" 
                        target="_blank">
                        <i class="fa-brands fa-youtube"></i>
                        بلاي ليست
                     </a>
                     <a href="https://drive.google.com/drive/folders/1fsrUSmdyANe8l-fGc-H7STZYG1RETW_I" 
                        class="resource-btn"
-                       data-aos="fade-right" 
-                       data-aos-delay="200" 
+                       data-animate="fade-right" 
+                       data-delay="3" 
                        target="_blank">
                        <i class="fa-solid fa-note-sticky"></i>
                        مذكرة
@@ -123,24 +104,22 @@
                     
                     <a href="https://drive.google.com/file/d/11AWr56RK-SLwReleGpDRKip9ItQ2QyR_/view" 
                        class="resource-btn"
-                       data-aos="fade-right" 
-                       data-aos-delay="250" 
+                       data-animate="fade-right" 
+                       data-delay="4" 
                        target="_blank">
                        <i class="fa-solid fa-file-lines"></i>
                        شيت تمارين
                     </a>
-                    
                 </div>
 
-                <div class="quiz-notice" data-aos="fade-up">
+                <div class="quiz-notice" data-animate="fade-up">
                     <p>الدكتور هيكمل محاضرات بعد رمضان و هتكون زمن المحاضرة ساعتين</p>
                 </div>
-
             </div>
         </article>
 
         <!-- المجالات الكهربية -->
-        <article class="course-card" data-aos="fade-up" data-aos-delay="200">
+        <article class="course-card" data-animate="fade-up" data-delay="2">
             <div class="course-header">
                 <h2 class="course-title">
                     <i class="fa-solid fa-magnet"></i>
@@ -154,53 +133,44 @@
                     <h3 class="content-title">المحتوى العلمي:</h3>
                     <ul class="topics">
                         <li>Coulombs' law</li>
-                        
                     </ul>
                 </div>
 
-                <div class="resources-links">
+                <div class="resources-links" data-animate="fade-in" data-delay="0">
                     <h3 class="content-title">الموارد التعليمية:</h3>
                     <a href="https://drive.google.com/file/d/1tC7bQHW0Vb7ex-aJfR3s7aPykh56mfjH/view" 
                        class="resource-btn"
-                       data-aos="fade-right" 
-                       data-aos-delay="50" 
+                       data-animate="fade-right" 
+                       data-delay="0" 
                        target="_blank">
                        <i class="fa-solid fa-file-pdf"></i>
                        محاضرة
                     </a>
                     <a href="https://youtube.com/playlist?list=PL7Wo-XLLcpqclzhlJei_opSlmc5zh_SHy&si=rQYPgVujO4Kiq6q2" 
                        class="resource-btn"
-                       data-aos="fade-right" 
-                       data-aos-delay="100" 
+                       data-animate="fade-right" 
+                       data-delay="1" 
                        target="_blank">
                        <i class="fa-solid fa-video"></i>
                        بلاي ليست
                     </a>
                     <a href="https://drive.google.com/file/d/1Lb5PNecAOGlsTTBtwERLUgCHcOVZxPCC/view" 
                        class="resource-btn"
-                       data-aos="fade-right" 
-                       data-aos-delay="150" 
+                       data-animate="fade-right" 
+                       data-delay="2" 
                        target="_blank">
                        <i class="fa-solid fa-note-sticky"></i>
                        مذكرة
                     </a>
-                    <!--
-                    <a href="https://drive.google.com/file/d/11J4UQaelC5ximVmiCOtgnLY-9uJAZSRf/view" 
-                       class="resource-btn" 
-                       target="_blank">
-                       <i class="fa-solid fa-file-lines"></i>
-                       شيت تمارين
-                    </a>
-                    -->
                 </div>
-                <div class="quiz-notice" data-aos="fade-up">
+                <div class="quiz-notice" data-animate="fade-up">
                     <p>مطلوب من كل واحد يحل مسئله من الشيت و يسلمها المحاضرة الجايه.</p>
                 </div>
             </div>
         </article>
 
         <!-- الهندسة الإلكترونية -->
-        <article class="course-card" data-aos="fade-up" data-aos-delay="300">
+        <article class="course-card" data-animate="fade-up" data-delay="3">
             <div class="course-header">
                 <h2 class="course-title">
                     <i class="fa-solid fa-diagram-project"></i>
@@ -218,28 +188,28 @@
                     </ul>
                 </div>
 
-                <div class="resources-links">
+                <div class="resources-links" data-animate="fade-in" data-delay="0">
                     <h3 class="content-title">الموارد التعليمية:</h3>
                     <a href="https://drive.google.com/file/d/1wPyQW3A2xnZZ9_69-aU0gXkjXO8tnBLE/view" 
                        class="resource-btn"
-                       data-aos="fade-right" 
-                       data-aos-delay="50" 
+                       data-animate="fade-right" 
+                       data-delay="0" 
                        target="_blank">
                        <i class="fa-solid fa-file-pdf"></i>
                        محاضرة
                     </a>
                     <a href="https://youtu.be/wrhk-lfpces?si=bC2O5_6eV9JTZ6nj" 
                        class="resource-btn"
-                       data-aos="fade-right" 
-                       data-aos-delay="100" 
+                       data-animate="fade-right" 
+                       data-delay="1" 
                        target="_blank">
                        <i class="fa-solid fa-video"></i>
                        فيديو
                     </a>
                     <a href="https://drive.google.com/file/d/1Ae5m67muXXwkXBmVTR4-mePhMC7Y3Z0G/view" 
                        class="resource-btn"
-                       data-aos="fade-right" 
-                       data-aos-delay="150" 
+                       data-animate="fade-right" 
+                       data-delay="2" 
                        target="_blank">
                        <i class="fa-solid fa-note-sticky"></i>
                        مذكرة
@@ -249,7 +219,7 @@
         </article>
 
         <!-- مصادر الطاقة المتجددة -->
-        <article class="course-card" data-aos="fade-up" data-aos-delay="400">
+        <article class="course-card" data-animate="fade-up" data-delay="4">
             <div class="course-header">
                 <h2 class="course-title">
                     <i class="fa-solid fa-solar-panel"></i>
@@ -269,61 +239,52 @@
                         <li>Single Excited Systems Force</li>
                         <li>Double Excited Systems Field Energy</li>
                         <li>Double Excited Syste</li>
-                        
                     </ul>
                 </div>
 
-                <div class="resources-links">
+                <div class="resources-links" data-animate="fade-in" data-delay="0">
                     <h3 class="content-title">الموارد التعليمية:</h3>
                     <a href="https://drive.google.com/file/d/1v9NyROk27pVBinJ89fUQPPsRT20Ux3ZI/view" 
                        class="resource-btn"
-                       data-aos="fade-right" 
-                       data-aos-delay="50" 
+                       data-animate="fade-right" 
+                       data-delay="0" 
                        target="_blank">
                        <i class="fa-solid fa-file-pdf"></i>
                        محاضرة
                     </a>
-                    <!--
-                    <a href="https://drive.google.com/file/d/1yVHIxTjFOWbIlOh6eoPI7jQ9BEmqd7KR/view" 
-                       class="resource-btn" 
-                       target="_blank">
-                       <i class="fa-solid fa-file-pdf"></i>
-                       ملخص
-                    </a>
-                    -->
                     <a href="https://youtube.com/playlist?list=PL7Wo-XLLcpqdiWqW6mE5stH8AMkioYqQO&si=N42ovclt-WIIM_j8" 
                        class="resource-btn"
-                       data-aos="fade-right" 
-                       data-aos-delay="100" 
+                       data-animate="fade-right" 
+                       data-delay="1" 
                        target="_blank">
                        <i class="fa-solid fa-video"></i>
                        بلاي ليست
                     </a>
                     <a href="https://drive.google.com/file/d/1zHlgg1LX_UnZ1ctwabRsGjdza9Rfau0i/view" 
                        class="resource-btn"
-                       data-aos="fade-right" 
-                       data-aos-delay="150" 
+                       data-animate="fade-right" 
+                       data-delay="2" 
                        target="_blank">
                        <i class="fa-solid fa-file-lines"></i>
                        الشيت
                     </a>
                     <a href="https://drive.google.com/file/d/1zc3wO80_FVmg4jWQi1KxxjWNUbO5lA8U/view" 
                        class="resource-btn"
-                       data-aos="fade-right" 
-                       data-aos-delay="200" 
+                       data-animate="fade-right" 
+                       data-delay="3" 
                        target="_blank">
                        <i class="fa-solid fa-file-circle-check"></i>
                        حل الشيت
                     </a>
                 </div>
-                <div class="quiz-notice" data-aos="fade-up">
+                <div class="quiz-notice" data-animate="fade-up">
                     <p> ⛔ في كويز يوم التلات الجاي الساعه "9:30" الدكتورة هتبعت لينك لفورم الكويز على اول ٣ محاضرات.</p>
                 </div>
             </div>
         </article>
 
         <!-- علوم المواد -->
-        <article class="course-card" data-aos="fade-up" data-aos-delay="500">
+        <article class="course-card" data-animate="fade-up" data-delay="5">
             <div class="course-header">
                 <h2 class="course-title">
                     <i class="fa-solid fa-flask"></i>
@@ -337,42 +298,31 @@
                     <h3 class="content-title">المحتوى العلمي:</h3>
                     <ul class="topics">
                         <li>Tension</li>
-
                     </ul>
                 </div>
 
-                <div class="resources-links">
+                <div class="resources-links" data-animate="fade-in" data-delay="0">
                     <h3 class="content-title">الموارد التعليمية:</h3>
                     <a href="https://drive.google.com/file/d/1yjraXaJRnQuzDnOAFmED9tTpHAeBJQvj/view" 
                        class="resource-btn"
-                       data-aos="fade-right" 
-                       data-aos-delay="50" 
+                       data-animate="fade-right" 
+                       data-delay="0" 
                        target="_blank">
                        <i class="fa-solid fa-file-pdf"></i>
                        محاضرة
                     </a>
-                    <!--
-                    <a href="https://drive.google.com/file/d/1PhZE2LGVgK68DF-xk2NgHAbGAISw80Ci/view" 
-                       class="resource-btn" 
-                       target="_blank">
-                       <i class="fa-solid fa-images"></i>
-                       صور المحاضرة
-                    </a>
-                    -->
-                    
                     <a href="https://youtube.com/playlist?list=PLR2RsKKRngz4Em-xZxzHdsWCF-DB5J4nS&si=cNi4i6GSR4J9sEI4" 
-                    class="resource-btn"
-                    data-aos="fade-right" 
-                    data-aos-delay="100" 
-                    target="_blank">
-                    <i class="fa-brands fa-youtube"></i>
-                    بلاي ليست
+                       class="resource-btn"
+                       data-animate="fade-right" 
+                       data-delay="1" 
+                       target="_blank">
+                       <i class="fa-brands fa-youtube"></i>
+                       بلاي ليست
                     </a>
-
                     <a href="https://drive.google.com/file/d/10-bT8ALNsoJwNtQcOT07AEo0ozhMAp-f/view" 
                        class="resource-btn"
-                       data-aos="fade-right" 
-                       data-aos-delay="150" 
+                       data-animate="fade-right" 
+                       data-delay="2" 
                        target="_blank">
                        <i class="fa-solid fa-note-sticky"></i>
                        مذكرة
@@ -382,102 +332,87 @@
         </article>
 
         <!-- قسم الفيزياء -->
-<article class="course-card" data-aos="fade-up" data-aos-delay="600">
-    <div class="course-header">
-        <h2 class="course-title">
-            <i class="fa-solid fa-atom"></i>
-            الفيزياء
-        </h2>
-        <p class="lecture-progress"> ch3</p>
-    </div>
-    
-    <div class="course-content">
-        <div class="topics-list">
-            <h3 class="content-title">المحتوى العلمي:</h3>
-            <ul class="topics">
-                <li>ch3 interferance of light waves </li>
-            </ul>
-        </div>
-
-        <div class="resources-links">
-            <h3 class="content-title">الموارد التعليمية:</h3>
+        <article class="course-card" data-animate="fade-up" data-delay="6">
+            <div class="course-header">
+                <h2 class="course-title">
+                    <i class="fa-solid fa-atom"></i>
+                    الفيزياء
+                </h2>
+                <p class="lecture-progress"> ch3</p>
+            </div>
             
-            <div class="resource-group">
-                <h4 class="resource-type">المحاضرات و الشيت:</h4>
-                <a href="https://drive.google.com/file/d/1F1DCoiXINyNhVeGjZu3PN-ySi6m0WVvQ/view" 
-                class="resource-btn"
-                data-aos="fade-right" 
-                data-aos-delay="50" 
-                target="_blank">
-                    <i class="fa-solid fa-video"></i>
-                    المحاضرة
-                </a>
-            </div>
+            <div class="course-content">
+                <div class="topics-list">
+                    <h3 class="content-title">المحتوى العلمي:</h3>
+                    <ul class="topics">
+                        <li>ch3 interferance of light waves </li>
+                    </ul>
+                </div>
 
-            <div class="resource-group">
-                <h4 class="resource-type">مذكرات البشمهندس محمد العطار:</h4>
-                <a href="https://drive.google.com/file/d/1Tu8E7m7V5oGL5SVMMzrOuaNjR0slYsTR/view" 
-                class="resource-btn"
-                data-aos="fade-right" 
-                data-aos-delay="100" 
-                target="_blank">
-                    <i class="fa-solid fa-book-open"></i>
-                    المذكرة الجزء الثالث
-                </a>
-                <!--
-                <a href="https://drive.google.com/file/d/1GJfm6ryASp75PXwSsiHr6gh5CQQCvDGi/view"
-                 class="resource-btn" target="_blank">
-                    <i class="fa-solid fa-book-open"></i>
-                    المذكرة الجزء الثاني
-                </a>
-                -->
-            </div>
+                <div class="resources-links" data-animate="fade-in" data-delay="0">
+                    <h3 class="content-title">الموارد التعليمية:</h3>
+                    
+                    <div class="resource-group">
+                        <h4 class="resource-type">المحاضرات و الشيت:</h4>
+                        <a href="https://drive.google.com/file/d/1F1DCoiXINyNhVeGjZu3PN-ySi6m0WVvQ/view" 
+                           class="resource-btn"
+                           data-animate="fade-right" 
+                           data-delay="0" 
+                           target="_blank">
+                            <i class="fa-solid fa-video"></i>
+                            المحاضرة
+                        </a>
+                    </div>
 
-            <div class="resource-group">
-                <h4 class="resource-type">شيتات وحلها:</h4>
-                <a href="https://drive.google.com/file/d/1FDNl90uD9t9L4Sqa_qDzb3Q9eeJ2w6_h/view"
-                   class="resource-btn"
-                   data-aos="fade-right" 
-                   data-aos-delay="150" 
-                   target="_blank">
-                    <i class="fa-solid fa-file-pdf"></i>
-                    شيت 3 و حله 
-                </a>
-                <!--
-                <a href="https://drive.google.com/file/d/1F8OFsf1TUUvMBBz9h3SPjZAjr-jHn0GL/view" 
-                class="resource-btn" target="_blank">
-                    <i class="fa-solid fa-file-pdf"></i>
-                    الشيت الثاني
-                </a>
-            -->
-            </div>
+                    <div class="resource-group">
+                        <h4 class="resource-type">مذكرات البشمهندس محمد العطار:</h4>
+                        <a href="https://drive.google.com/file/d/1Tu8E7m7V5oGL5SVMMzrOuaNjR0slYsTR/view" 
+                           class="resource-btn"
+                           data-animate="fade-right" 
+                           data-delay="0" 
+                           target="_blank">
+                            <i class="fa-solid fa-book-open"></i>
+                            المذكرة الجزء الثالث
+                        </a>
+                    </div>
 
-            <div class="resource-group">
-                <h4 class="resource-type">بلاي ليست الدكتور محمد إسماعيل:</h4>
-                <a href="https://youtube.com/playlist?list=PLR2RsKKRngz7OPO7JxrhAupsaRA41am7N&si=D78x8nUOJ0SSj_S-"
-                   class="resource-btn"
-                   data-aos="fade-right" 
-                   data-aos-delay="200" 
-                   target="_blank">
-                    <i class="fa-brands fa-youtube"></i>
-                    قائمة التشغيل الكاملة
-                </a>
+                    <div class="resource-group">
+                        <h4 class="resource-type">شيتات وحلها:</h4>
+                        <a href="https://drive.google.com/file/d/1FDNl90uD9t9L4Sqa_qDzb3Q9eeJ2w6_h/view"
+                           class="resource-btn"
+                           data-animate="fade-right" 
+                           data-delay="0" 
+                           target="_blank">
+                            <i class="fa-solid fa-file-pdf"></i>
+                            شيت 3 و حله 
+                        </a>
+                    </div>
+
+                    <div class="resource-group">
+                        <h4 class="resource-type">بلاي ليست الدكتور محمد إسماعيل:</h4>
+                        <a href="https://youtube.com/playlist?list=PLR2RsKKRngz7OPO7JxrhAupsaRA41am7N&si=D78x8nUOJ0SSj_S-"
+                           class="resource-btn"
+                           data-animate="fade-right" 
+                           data-delay="0" 
+                           target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                            قائمة التشغيل الكاملة
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</article>
-       
+        </article>
     </main>
 
-    <section class="lab-section" data-aos="fade-up">
-        <div class="lab-header" data-aos="fade-right">
+    <section class="lab-section" data-animate="fade-up" data-delay="0">
+        <div class="lab-header" data-animate="fade-right" data-delay="1">
             <h2><i class="fas fa-flask"></i> معمل الإلكترونيات - التجربة الخامسة</h2>
             <h3>دوائر الدايود (Diode Circuits)</h3>
         </div>
     
         <div class="lab-content">
             <!-- المكونات المطلوبة -->
-            <div class="components-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="components-card" data-animate="fade-up" data-delay="2">
                 <h4><i class="fas fa-microchip"></i> المكونات المطلوبة:</h4>
                 <ul class="components-list">
                     <li><i class="fas fa-resistor"></i> Resistors :
@@ -490,7 +425,7 @@
             </div>
     
             <!-- تنظيم المجموعات -->
-            <div class="group-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="group-card" data-animate="fade-up" data-delay="3">
                 <h4><i class="fas fa-users"></i> تنظيم المجموعات:</h4>
                 <div class="group-task">
                     <div class="task-progress">
@@ -503,28 +438,8 @@
                 </div>
             </div>
             
-            <!--
-             تحضير التجربة 
-            <div class="preparation-card">
-                <h4><i class="fas fa-book-open"></i> التحضير المطلوب:</h4>
-                <div class="preparation-steps">
-                    <div class="step">
-                        <i class="fas fa-file-alt"></i>
-                        <p>دراسة دايود PN junction</p>
-                    </div>
-                    <div class="step">
-                        <i class="fas fa-drafting-compass"></i>
-                        <p>رسم الدائرة الكهربية</p>
-                    </div>
-                    <div class="step">
-                        <i class="fas fa-calculator"></i>
-                        <p>حسابات التيار والجهد</p>
-                    </div>
-                </div>
-            </div>
-            -->
             <!-- إرشادات الأمان -->
-            <div class="safety-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="safety-card" data-animate="fade-up" data-delay="4">
                 <h4><i class="fas fa-exclamation-triangle"></i> إرشادات الأمان:</h4>
                 <ul class="safety-list">
                     <li>فحص الدائرة قبل التوصيل</li>
@@ -532,20 +447,11 @@
                     <li>عدم تجاوز الجهد المسموح للدايود</li>
                 </ul>
             </div>
-    
-            <!-- تسليم التقرير 
-            <div class="report-card">
-                <a href="#" class="report-btn">
-                    <i class="fas fa-file-upload"></i>
-                    رفع التقرير النهائي
-                </a>
-            </div>
-            -->
         </div>
     </section>
     
-     <!-- البوت الرسمي -->
-     <section class="official-bot" data-aos="fade-up" data-aos-delay="100">
+    <!-- البوت الرسمي -->
+    <section class="official-bot" data-animate="fade-up" data-delay="0">
         <h2 class="bot-title">
             <a href="https://t.me/ZESU_1st_E_bot" target="_blank">
                 <i class="fa-brands fa-telegram"></i>
@@ -555,16 +461,7 @@
         </h2>
     </section>
 
-    <!-- Add AOS JS and initialization -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 800,
-            offset: 150,
-            once: true,
-            mirror: false,
-            easing: 'ease-in-out-quad'
-        });
-    </script>
+    <!-- Use custom animation script -->
+    <script src="../js/animations.js"></script>
 </body>
 </html>
