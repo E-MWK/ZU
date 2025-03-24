@@ -11,13 +11,22 @@
 </head>
 
 <body>
+    <!-- Fixed Navigation Icons -->
+    <nav class="nav-icons">
+        <ul>
+            <li><a href="#weekly-activities" title="النشرات الأسبوعية"><i class="fas fa-calendar-week"></i></a></li>
+            <li><a href="#upcoming-exams" title="الاختبارات القادمة"><i class="fas fa-calendar-check"></i></a></li>
+            <li><a href="#midyear-resources" title="مصادر امتحانات الميد تيرم"><i class="fas fa-book"></i></a></li>
+        </ul>
+    </nav>
+
     <div class="main-container">
         <header class="landing-header">
             <h1 class="main-title">النشرات الأسبوعية</h1>
             <p class="tagline">تابع آخر التحديثات الأسبوعية للمواد الدراسية</p>
         </header>
 
-        <main class="weeks-grid">
+        <main id="weekly-activities" class="weeks-grid">
             <!-- الأسبوع الأول -->
             <article class="week-card" data-aos="fade-up">
                 <span class="status-badge completed">مكتمل</span>
@@ -89,57 +98,121 @@
 
             <!-- الأسبوع السادس -->
             <article class="week-card" data-aos="fade-up" data-aos-delay="500">
-                <span class="status-badge upcoming">قريبًا</span>
-                <!--<span class="status-badge completed">مكتمل</span>-->
+                <!--<span class="status-badge upcoming">قريبًا</span>-->
+                <span class="status-badge completed">مكتمل</span>
                 <div class="week-number">الأسبوع السادس</div>
                 <div class="week-date">15 - 20 مارس</div>
                 <ul class="topics-list">
-                    <li class="topic-item">.......</li>
-                    <li class="topic-item">.......</li>
-                    <li class="topic-item">.......</li>
+                    <li class="topic-item">Logic gates</li>
+                    <li class="topic-item">Photovoltaic system</li>
+                    <li class="topic-item">Crystal structure</li>
                 </ul>
-                <a href="#" class="week-link">عرض النشرة الكاملة</a>
+                <a href="weeks/week6.html" class="week-link">عرض النشرة الكاملة</a>
             </article>
 
         </main>
 
         <!-- قسم الاختبارات القادمة -->
-        <section class="quizzes-section">
+        <section id="upcoming-exams" class="quizzes-section">
             <h2 class="section-title">الاختبارات القادمة</h2>
             <div class="quizzes-grid">
                 <!-- اختبار #1 -->
                 <div class="quiz-card" data-aos="fade-up">
-                    <div class="quiz-subject">الإلكترونيات</div>
-                    <div class="quiz-date"> السبت 15 مارس 2025</div>
+                    <div class="quiz-subject">الهندسة الالكترونية</div>
+                    <div class="quiz-date"> السبت 5 مارس 2025</div>
                     <div class="quiz-details">
-                        <span class="quiz-time">لم يحدد المعاد</span>
-                        <span class="quiz-location">اونلاين</span>
+                        <span class="quiz-time">10:45 AM</span>
+                        <span class="quiz-location">مدرج ھ 2 علوم اساسية</span>
                     </div>
-                    <a href="#" class="quiz-link">الذهاب إلى الاختبار</a>
+                    <a href="#" class="quiz-link">مصادر للمادة</a>
                 </div>
 
                 <!-- اختبار #2 -->
                 <div class="quiz-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="quiz-subject">مصادر الطاقة المتجددة</div>
-                    <div class="quiz-date">السبت 22 مارس 2025</div>
+                    <div class="quiz-subject">المجالات الكهربية</div>
+                    <div class="quiz-date">الأحد 6 أبريل 2025</div>
                     <div class="quiz-details">
-                        <span class="quiz-time">10:00 PM</span>
-                        <span class="quiz-location">اونلاين</span>
+                        <span class="quiz-time">10:45 AM</span>
+                        <span class="quiz-location">مدرج ھ 2 علوم اساسية</span>
                     </div>
-                    <a href="#" class="quiz-link">الذهاب إلى الاختبار</a>
+                    <a href="#" class="quiz-link">مصادر للمادة</a>
                 </div>
 
-                <!-- اختبار #3 
+                <!-- اختبار #3 -->
                 <div class="quiz-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="quiz-subject">التحليل الهندسي</div>
-                    <div class="quiz-date">20 مارس 2025</div>
+                    <div class="quiz-subject">علوم المواد</div>
+                    <div class="quiz-date">الاثنين 7 أبريل 2025</div>
                     <div class="quiz-details">
-                        <span class="quiz-time">11:00 صباحًا</span>
-                        <span class="quiz-location">أونلاين</span>
+                        <span class="quiz-time">10:45 AM</span>
+                        <span class="quiz-location">مدرج ھ 2 علوم اساسية</span>
                     </div>
-                    <a href="#" class="quiz-link">الذهاب إلى الاختبار</a>
+                    <a href="#" class="quiz-link">مصادر للمادة</a>
                 </div>
-                -->
+
+                 <!-- اختبار #4 -->
+                 <div class="quiz-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="quiz-subject">فيزياء هندسة 3</div>
+                    <div class="quiz-date">الثلاثاء  8 أبريل 2025</div>
+                    <div class="quiz-details">
+                        <span class="quiz-time">10:45 AM</span>
+                        <span class="quiz-location">مدرج ھ 2 علوم اساسية</span>
+                    </div>
+                    <a href="#" class="quiz-link">مصادر للمادة</a>
+                </div>
+
+                 <!-- اختبار #5 -->
+                 <div class="quiz-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="quiz-subject">التصميم المنطقي</div>
+                    <div class="quiz-date">الأربعاء 9 أبريل 2025</div>
+                    <div class="quiz-details">
+                        <span class="quiz-time">10:45 AM</span>
+                        <span class="quiz-location">مدرج ھ 2 علوم اساسية</span>
+                    </div>
+                    <a href="#" class="quiz-link">مصادر للمادة</a>
+                </div>
+
+                 <!-- اختبار #6 -->
+                <div class="quiz-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="quiz-subject">مصادرالطاقة المتجددة</div>
+                    <div class="quiz-date">الخميس 10 أبريل 2025</div>
+                    <div class="quiz-details">
+                        <span class="quiz-time">10:45 AM</span>
+                        <span class="quiz-location">مدرج ھ 2 علوم اساسية</span>
+                    </div>
+                    <a href="#" class="quiz-link">مصادر للمادة</a>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- قسم مصادر امتحانات منتصف العام -->
+        <section id="midyear-resources" class="mid-year-exams-section">
+            <h2 class="section-title">مصادر امتحانات الميد تيرم </h2>
+            <div class="exams-grid">
+                <div class="subject-card" data-aos="fade-up">
+                    <div class="subject-title">Renewable Energy</div>
+                    <a href="subjects/renewable_resources.html" class="subject-link">عرض المصادر</a>
+                </div>
+                <div class="subject-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="subject-title">Logic Design</div>
+                    <a href="subjects/logic.html" class="subject-link">عرض المصادر</a>
+                </div>
+                <div class="subject-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="subject-title">Physics</div>
+                    <a href="subjects/physics.html" class="subject-link">عرض المصادر</a>
+                </div>
+                <div class="subject-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="subject-title">Electric Fields</div>
+                    <a href="subjects/field.html" class="subject-link">عرض المصادر</a>
+                </div>
+                <div class="subject-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="subject-title">Material</div>
+                    <a href="subjects/material.html" class="subject-link">عرض المصادر</a>
+                </div>
+                <div class="subject-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="subject-title">Electronic</div>
+                    <a href="subjects/electronic.html" class="subject-link">عرض المصادر</a>
+                </div>
             </div>
         </section>
 
@@ -151,6 +224,21 @@
                 once: true,
                 mirror: false,
                 easing: 'ease-in-out-quad'
+            });
+
+            // Add smooth scrolling behavior for navigation
+            document.querySelectorAll('.nav-icons a').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 20,
+                        behavior: 'smooth'
+                    });
+                });
             });
         </script>
 
